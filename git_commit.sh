@@ -2,4 +2,9 @@
 
 git add .
 git commit -m "$1"
-git push
+
+remotes=`git remote`
+for remote in ${remotes}
+do
+    git push ${remote} master
+done
