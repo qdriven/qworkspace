@@ -1,5 +1,7 @@
 #! /bin/sh
 
+WORKSPACE=`pwd`
+cd ${WORKSPACE}
 git add .
 git commit -m "$1"
 
