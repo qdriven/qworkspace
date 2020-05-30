@@ -29,6 +29,12 @@ Visual Studio Setting:
 
 1. setting.json
 
+## Git .gitignore/.gitattributes template
+
+```sh
+
+```
+
 
 
 

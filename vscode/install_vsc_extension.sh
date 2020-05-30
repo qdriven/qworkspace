@@ -2,7 +2,17 @@
 
 echo "for install visual studio code extension ....."
 
+echo "install extension command is: code --install-extension publisher.extension"
+
+pkglist =(
+  ms-python.python
+  eamodio.gitlens 
+)
+code --install-extension ms-python.python
+
 ## code --install-extension publisher.extension
+
+
 
 # examples for installing extension in a bash
 
