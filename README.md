@@ -10,29 +10,32 @@ A working repo for scripts,snipptes, templates, or something else to Making Sett
 
 ## How to use this repo
 
-1. add as git submodule in your git repo 
+Add as git submodule in your git repo 
 
 ```sh
 git submodule add https://github.com/qdriven/qworkspace.git .qworkspace
 ```
-2. Then run different types of commands
 
-- setup visual studio code setting
-
-```sh
-sh init_vscode_setting.sh
-```
-
-## Visual Studio Setting 
-
-Visual Studio Setting:
-
-1. setting.json
 
 ## Git .gitignore/.gitattributes template
 
 ```sh
+sh .qworkspace/git/fetch_attribues.sh
+```
 
+Then all the gitignore/gitattributes file is added into your projects
+
+
+## Visual Studio Code Setting
+
+```sh
+cp -f .qworkspace/vscode/setting.json ./vscode
+```
+
+## Java MAVEN/GADLE Setting for MAVEN/GRADLE Slow issue in China
+
+```sh
+sh java/maven_gradle_setting.sh
 ```
 
 
