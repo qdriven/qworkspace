@@ -7,6 +7,9 @@
     "pasteImage.prefix": "/",
     "editor.fontSize": 20,
     "debug.console.fontSize": 18,
-    "terminal.integrated.fontSize": 18
-
+    "terminal.integrated.fontSize": 18,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
