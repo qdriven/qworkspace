@@ -5,6 +5,7 @@ echo "for install visual studio code extension ....."
 echo "install extension command is: code --install-extension publisher.extension"
 
 pkglist=(
+<<<<<<< HEAD
   ms-python.python
   eamodio.gitlens
   formulahendry.code-runner
@@ -23,12 +24,22 @@ for i in ${pkglist[@]}; do
 done
 
 
+=======
+  ms-python.python  ## python
+  eamodio.gitlens   ## gitlens
+  ms-azuretools.vscode-docker  ## Docker Plugin
+  formulahendry.code-runner
+
+  esbenp.prettier-vscode  ## Pretty Code
+)
+code --install-extension ms-python.python
+for package in ${pkglist[@]};do
+  echo "ready to install $package"
+  code --install-extension $package
+done
+>>>>>>> e2555c90db647d3824ae20c03e5b127f9e2de443
 ## code --install-extension publisher.extension
-
-
-
 # examples for installing extension in a bash
-
 # Visual Studio Code :: Package list
 # pkglist=(
 # ms-vscode.cpptools

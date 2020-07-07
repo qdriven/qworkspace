@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <!-- localRepository
+   | The path to the local repository maven will use to store artifacts.
+   |
+   | Default: ~/.m2/repository -->
+  <!-- <localRepository>e:\\data\\.m2</localRepository> -->
+  <pluginGroups>
+  </pluginGroups>
+  <proxies>
+  </proxies>
+  <servers>  
+  </servers>
+  <mirrors>
+  </mirrors>
+  
+  <profiles>
+    <profile>
+        <id>aliyun_nexus</id>
+        <activation>
+            <activeByDefault>true</activeByDefault>
+        </activation>
+        <repositories>
+        <repository>
+            <id>public</id>
+            <name>public</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases><enabled>true</enabled><updatePolicy>always</updatePolicy></releases> 
+             <snapshots><enabled>true</enabled><updatePolicy>always</updatePolicy></snapshots> 
+        </repository>
+
+        <repository>
+            <id>central</id>
+            <name>central</name>
+            <url>http://maven.aliyun.com/nexus/content/repositories/central/</url>
+            <snapshots>
+                <updatePolicy>interval:30</updatePolicy>
+            </snapshots>
+        </repository>
+        
+        <repository>
+            <id>apache-snapshots</id>
+            <name>apache-snapshots</name>
+            <url>http://maven.aliyun.com/nexus/content/repositories/apache-snapshots/</url>
+            <snapshots>
+                <updatePolicy>interval:30</updatePolicy>
+            </snapshots>
+        </repository>
+        
+        <repository>
+            <id>central-m1</id>
+            <name>central-m1</name>
+            <url>http://maven.aliyun.com/nexus/content/shadows/central-m1/</url>
+            <snapshots>
+                <updatePolicy>interval:30</updatePolicy>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>codehaus-snapshots</id>
+            <name>codehaus-snapshots</name>
+            <url>http://maven.aliyun.com/nexus/content/repositories/codehaus-snapshots/</url>
+            <snapshots>
+                <updatePolicy>interval:30</updatePolicy>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>releases</id>
+            <name>releases</name>
+            <url>http://maven.aliyun.com/nexus/content/repositories/releases/</url>
+            <snapshots>
+                <updatePolicy>interval:30</updatePolicy>
+            </snapshots>
+        </repository>
+        
+        <repository>
+            <id>snapshots</id>
+            <name>snapshots</name>
+            <url>http://maven.aliyun.com/nexus/content/repositories/snapshots/</url>
+            <snapshots>
+                <updatePolicy>interval:30</updatePolicy>
+            </snapshots>
+        </repository>
+        </repositories>
+    </profile>
+  </profiles>
+  
+  <activeProfiles>
+      <activeProfile>aliyun_nexus</activeProfile>
+  </activeProfiles>
+
+</settings>
