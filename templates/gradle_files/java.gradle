@@ -1,0 +1,44 @@
+import proguard.gradle.ProGuardTask
+
+apply plugin: 'java'
+
+compileJava.options.encoding = "utf-8"
+compileTestJava.options.encoding = "utf-8"
+javadoc.options.encoding = "utf-8"
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+}
+
+task proguard(type: ProGuardTask) {
+    dependsOn 'jar'
+    configuration "proguard.conf"
+
+//    libraryjars "${System.getProperty('java.home')}/lib/rt.jar"
+
+    injars jar.archivePath
+//    outjars "$buildDir/assemble/lib/${jar.baseName}-${POM_VERSION}.${jar.extension}"
+
+    outjars "$buildDir/assemble/lib/${POM_GROUP_ID}.${POM_ARTIFACT_ID}-${POM_VERSION}.${jar.extension}"
+}
+
+javadoc {
+    dependsOn "jar"
+    description "Bundles Javadoc into a JAR file for ${name}."
+    exclude '**/TestUtils.class'
+}
+
+jar {
+    description "Bundles compiled .class files into a JAR file for ${name}."
+    exclude '**/R.class', '**/R$*.class', '**/R.html', '**/R.*.html', 'BuildConfig.class'
+    exclude '**/TestUtils.class'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.11'
+    testCompile 'org.assertj:assertj-core:1.1.0'
+}

@@ -1,0 +1,1 @@
+include  ':example-android-lib', ':example-java-lib', ':MyApplication'

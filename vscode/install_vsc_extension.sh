@@ -4,11 +4,24 @@ echo "for install visual studio code extension ....."
 
 echo "install extension command is: code --install-extension publisher.extension"
 
-pkglist =(
+pkglist=(
   ms-python.python
-  eamodio.gitlens 
+  eamodio.gitlens
+  formulahendry.code-runner
+  akamud.vscode-theme-onedark
+  ms-azuretools.vscode-docker
+  dracula-theme.theme-dracula
+  ## markdown
+  yzhang.markdown-all-in-one
+  shd101wyy.markdown-preview-enhanced
+  vscode-icons-team.vscode-icons
+  ## git
 )
-code --install-extension ms-python.python
+
+for i in ${pkglist[@]}; do
+  code --install-extension $i
+done
+
 
 ## code --install-extension publisher.extension
 
