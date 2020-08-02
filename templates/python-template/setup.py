@@ -14,6 +14,9 @@ VERSION = "1.0.0"
 #
 # prerequisite: setuptools
 # http://pypi.python.org/pypi/setuptools
+# project template reference:https://github.com/brettcannon/python-project-template.git
+#
+
 
 REQUIRES = ["urllib3 >= 1.15", "six >= 1.10", "certifi", "python-dateutil"]
 
