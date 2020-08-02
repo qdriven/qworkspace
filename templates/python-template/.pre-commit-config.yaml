@@ -1,26 +1,33 @@
 repos:
-  - repo: https://github.com/psf/black
-    rev: stable
-    hooks:
-      - id: black
-        language_version: python3.6
-  - repo: https://github.com/asottile/seed-isort-config
-    rev: v1.9.4
-    hooks:
-      - id: seed-isort-config
-  - repo: https://github.com/pre-commit/mirrors-isort
-    rev: v4.3.21
-    hooks:
-      - id: isort
-  - repo: https://gitlab.com/pycqa/flake8
-    rev: 3.7.9
-    hooks:
-      - id: flake8
-  - repo: https://github.com/codespell-project/codespell
-    rev: v1.16.0
-    hooks:
-      - id: codespell
-        exclude: tests/
-        args:
-          - --ignore-words-list="bloaded,nto,pullrequest,pullrequests,thi,tim,wan,Wan"
-          - --quiet-level=2
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v2.3.0
+  hooks:
+  - id: check-builtin-literals
+  - id: check-byte-order-marker
+  - id: check-case-conflict
+  - id: check-docstring-first
+  - id: check-merge-conflict
+  - id: check-symlinks
+  - id: check-toml
+  - id: check-yaml
+  - id: debug-statements
+  - id: end-of-file-fixer
+  - id: mixed-line-ending
+  - id: trailing-whitespace
+- repo: https://github.com/psf/black
+  rev: 19.3b0
+  hooks:
+  - id: black
+- repo: https://gitlab.com/pycqa/flake8
+  rev: 3.8.3
+  hooks:
+  - id: flake8
+- repo: local  # Mirror hook at https://github.com/necaris/pre-commit-pyright.
+  hooks:
+  - id: pyright
+    name: pyright
+    entry: pyright
+    language: node
+    pass_filenames: false
+    types: [python]
+    additional_dependencies: ['pyright@1.1.55']
