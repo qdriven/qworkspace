@@ -2,12 +2,14 @@
 
 A working repo for scripts,snipptes, templates, or something else to Making Setting Environment Easier for tester.
 
+- shell scirpts
 - Visual Studio Code Setting
 - idea setting
 - python virtual environment setting
 - golang environement setting 
 - java/maven/gradle setting
 
+[cheatsheet](cheat-sheet.md)
 ## How to use this repo
 
 Add as git submodule in your git repo 
@@ -41,6 +43,8 @@ sh java/maven_gradle_setting.sh
 
 ## Use ```jq``` and json file as configuration
 
-
+```sh
+jq <json-path> <configuration-file-path>
+```
 
 
