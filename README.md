@@ -39,7 +39,8 @@ sh java/maven_gradle_setting.sh
 ```
 
 
+## Use ```jq``` and json file as configuration
 
-## To Do List
 
-- VS Code Plugin 
+
+
