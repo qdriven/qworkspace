@@ -1,50 +1,16 @@
 # README
 
-A working repo for scripts,snipptes, templates, or something else to Making Setting Environment Easier for tester.
+A repo to study and pratice improving productivity.
 
-- shell scirpts
-- Visual Studio Code Setting
-- idea setting
-- python virtual environment setting
-- golang environement setting 
-- java/maven/gradle setting
+## JIRA Plugin and script runner
 
-[cheatsheet](cheat-sheet.md)
-## How to use this repo
+- [hwo to jira plugins and scripts](docs/productivity/jira/jira-resources.md)
 
-Add as git submodule in your git repo 
+## Personal Scripts
+- [How to make own alias](qa-dotfiles/alias/slides.md)
+- [get-pid](script/get_pid) 打印pid
+- [获取git 仓库地址](script/gurl)
+- [email生成ssh key](script/ssh_email_gen.sh)
+- [ssh copy id](script/ssh_copy_id.sh)
 
-```sh
-git submodule add https://github.com/qdriven/qworkspace.git .qworkspace
-```
-
-
-## Git .gitignore/.gitattributes template
-
-```sh
-sh .qworkspace/git/fetch_attribues.sh
-```
-
-Then all the gitignore/gitattributes file is added into your projects
-
-
-## Visual Studio Code Setting
-
-```sh
-cp -f .qworkspace/vscode/setting.json ./vscode
-```
-
-## Java MAVEN/GADLE Setting for MAVEN/GRADLE Slow issue in China
-
-```sh
-sh java/maven_gradle_setting.sh
-```
-
-
-## Use ```jq``` and json file as configuration
-
-```sh
-jq <json-path> <configuration-file-path>
-```
-
-
+## How to make presentation in Markdown
