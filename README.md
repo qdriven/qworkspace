@@ -13,4 +13,16 @@ A repo to study and pratice improving productivity.
 - [email生成ssh key](script/ssh_email_gen.sh)
 - [ssh copy id](script/ssh_copy_id.sh)
 
+## fgit for quick github access
+
+For some unkown reason, it is not stable to access github local. So use github proxy tool like fgit to access.
+Here is a tool:
+
+```sh
+sudo curl -L https://github.com/fastgh/fgit/releases/download/v1.0.0/fgit.darwin -o /usr/local/bin/fgit
+sudo chmod +x /usr/local/bin/fgit
+```
 ## How to make presentation in Markdown
+
+slidev, a tool to create presentation/slides in Markdown manner.
+

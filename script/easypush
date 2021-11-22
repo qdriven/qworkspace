@@ -1,7 +1,8 @@
 #!/bin/zsh
+
 echo `pwd`
 CURR_DIR=`pwd`
 cd ${CURR_DIR}
 git add .
 git commit -m $1
-git push 
+fgit push 
