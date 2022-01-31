@@ -1,8 +1,9 @@
 # ISSUE
 
 ## Description
+
 describe the problem or the pain point.
 
 ## Why and What
 
-Fill with why to issue and what to improve
+Fill with why to issue and what to improve or what to fix

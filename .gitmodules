@@ -1,0 +1,3 @@
+[submodule "my-dotfiles"]
+	path = my-dotfiles
+	url = git@github.com:qdriven/my-dotfiles.git
