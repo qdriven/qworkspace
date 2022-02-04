@@ -1,7 +1,7 @@
 #!/bin/sh
 
 ## install nvm 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ls ~/.nvm
 
 # add to profile
@@ -10,14 +10,12 @@ ls ~/.nvm
 
 ## install
 nvm install node
-nvm install <version_of_node>
+nvm install latest
 
 ## list version
 nvm ls-remote
-
-nvm use node
-
+# nvm use node
 nvm install --lts
-nvm install 'lts/*' --reinstall-packages-from=current
-nvm install node --reinstall-packages-from=node
+# nvm install 'lts/*' --reinstall-packages-from=current
+# nvm install node --reinstall-packages-from=node
 
