@@ -8,3 +8,7 @@ cat sources.list >> /etc/apt/sources.list
 sudo apt-get update
 
 
+## install ubuntu brew
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
