@@ -1,6 +1,9 @@
 # README
 
-A repo to study and pratice improving productivity.
+personal workspace.
+
+## Java Dev setup
+
 
 
 
