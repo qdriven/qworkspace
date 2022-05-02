@@ -9,5 +9,8 @@ pnpm add -g pnpm
 
 pnpm config set store-dir ~/.pnpm-store
 
-yarn config set registry <>
-npm config set registry  <>
+# install npm nrm
+npm install -g nrm
+npm install -g yarn
+#yarn config set registry <>
+#npm config set registry  <>
