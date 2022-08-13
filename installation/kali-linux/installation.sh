@@ -35,3 +35,9 @@ pip install glances
 ## install zoxide which is empowered by rust
 curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
 
+## theme
+export OXIDIZER=$HOME/oxidizer
+git clone --depth=1 https://github.com/ivaquero/oxidizer.sh.git $OXIDIZER
+bash $OXIDIZER/install.sh
+
+## install rust
