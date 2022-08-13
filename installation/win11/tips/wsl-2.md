@@ -1,0 +1,3 @@
+# WSL configuration
+
+wslconfig -h

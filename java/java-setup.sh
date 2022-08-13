@@ -1,4 +1,5 @@
 #!/bin/sh
+sudo apt install openjdk-19-jdk -y
 
 bash install-jabba.sh
 sudo apt-get install gradle
